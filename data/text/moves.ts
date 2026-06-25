@@ -287,8 +287,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	aurorabeam: {
 		name: "Aurora Beam",
-		desc: "Has a 10% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "10% chance to lower the target's Attack by 1.",
+		desc: "Now 75 base power. Has a 10% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "Now 75 base power. 10% chance to lower the target's Attack by 1.",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Attack by 1 stage.",
 			shortDesc: "33% chance to lower the target's Attack by 1.",
@@ -545,8 +545,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	blazekick: {
 		name: "Blaze Kick",
-		desc: "Has a 10% chance to burn the target and a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio. 10% chance to burn.",
+		desc: "Now 90 base power and 100% accurate. Has a 10% chance to burn the target and a higher chance for a critical hit.",
+		shortDesc: "Now 90 base power and 100% accurate. High critical hit ratio. 10% chance to burn.",
 	},
 	blazingtorque: {
 		name: "Blazing Torque",
@@ -750,8 +750,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bubblebeam: {
 		name: "Bubble Beam",
-		desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "10% chance to lower the target's Speed by 1.",
+		desc: "Now 75 base power. Has a 10% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "Now 75 base power. 10% chance to lower the target's Speed by 1.",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
 			shortDesc: "33% chance to lower the target's Speed by 1.",
@@ -897,8 +897,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	chatter: {
 		name: "Chatter",
-		desc: "Has a 100% chance to confuse the target.",
-		shortDesc: "100% chance to confuse the target.",
+		desc: "Now 90 base power. Has a 100% chance to confuse the target",
+		shortDesc: "Now 90 base power. 100% chance to confuse the target.",
 		gen5: {
 			desc: "Has an X% chance to confuse the target, where X is 0 unless the user is a Chatot that hasn't Transformed. If the user is a Chatot, X is 0 or 10 depending on the volume of Chatot's recorded cry, if any; 0 for a low volume or no recording, 10 for a medium to high volume recording.",
 			shortDesc: "For Chatot, 10% chance to confuse the target.",
@@ -1214,8 +1214,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	crosspoison: {
 		name: "Cross Poison",
-		desc: "Has a 10% chance to poison the target and a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio. 10% chance to poison.",
+		desc: "Now 90 base power. Has a 10% chance to poison the target and a higher chance for a critical hit.",
+		shortDesc: "Now 90 base power. High critical hit ratio. 10% chance to poison.",
 	},
 	crunch: {
 		name: "Crunch",
@@ -1255,7 +1255,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	cut: {
 		name: "Cut",
-		shortDesc: "No additional effect.",
+		desc: "Now Grass type. 60 base power. 100% accurate. High crit ratio.",
+		shortDesc: "Now Grass type. 60 base power. 100% accurate. High crit ratio.",
 	},
 	darkestlariat: {
 		name: "Darkest Lariat",
@@ -1435,8 +1436,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	disarmingvoice: {
 		name: "Disarming Voice",
-		desc: "This move does not check accuracy.",
-		shortDesc: "This move does not check accuracy. Hits foes.",
+		desc: "Now 50 base power. This move does not check accuracy.",
+		shortDesc: "Now 50 base power. This move does not check accuracy. Hits foes.",
 	},
 	discharge: {
 		name: "Discharge",
@@ -1620,8 +1621,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	drainingkiss: {
 		name: "Draining Kiss",
-		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
-		shortDesc: "User recovers 75% of the damage dealt.",
+		desc: "Now 75 base power. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "Now 75 base power. User recovers 50% of the damage dealt.",
 	},
 	drainpunch: {
 		name: "Drain Punch",
@@ -2150,8 +2151,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flamewheel: {
 		name: "Flame Wheel",
-		desc: "Has a 10% chance to burn the target.",
-		shortDesc: "10% chance to burn the target. Thaws user.",
+		desc: "Now 75 base power. Has a 10% chance to burn the target.",
+		shortDesc: "Now 75 base power. 10% chance to burn the target. Thaws user.",
 	},
 	flareblitz: {
 		name: "Flare Blitz",
@@ -2221,8 +2222,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	fly: {
 		name: "Fly",
-		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Flies up on first turn, then strikes the next turn.",
+		desc: "Now 100 base power and 100% accurate. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Now 100 base power and 100% accurate. Flies up on first turn, then strikes the next turn.",
 		gen5: {
 			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
 		},
@@ -3855,10 +3856,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Make It Rain",
 		desc: "Lowers the user's Special Attack by 1 stage.",
 		shortDesc: "Lowers the user's Sp. Atk by 1. Hits foe(s).",
-		champions: {
-			desc: "Lowers the user's Special Attack by 2 stages.",
-			shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",
-		},
 
 		activate: "#payday",
 	},
@@ -4464,8 +4461,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	needlearm: {
 		name: "Needle Arm",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Now has 90 base power. Has a 30% chance to make the target flinch.",
+		shortDesc: "Now has 90 base power. 30% chance to make the target flinch.",
 		gen3: {
 			desc: "Has a 30% chance to make the target flinch. Damage doubles if the target has used Minimize while active.",
 		},
@@ -4754,8 +4751,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	poisonfang: {
 		name: "Poison Fang",
-		desc: "Has a 50% chance to badly poison the target.",
-		shortDesc: "50% chance to badly poison the target.",
+		desc: "Now has 65 base power. 95% accurate. Has a 50% chance to badly poison the target.",
+		shortDesc: "Now has 65 base power. 95% accurate. 50% chance to badly poison the target.",
 		gen5: {
 			desc: "Has a 30% chance to badly poison the target.",
 			shortDesc: "30% chance to badly poison the target.",
@@ -4790,8 +4787,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	poisontail: {
 		name: "Poison Tail",
-		desc: "Has a 10% chance to poison the target and a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio. 10% chance to poison.",
+		desc: "Now has 90 base power. Has a 10% chance to poison the target and a higher chance for a critical hit.",
+		shortDesc: "Now has 90 base power. High critical hit ratio. 10% chance to poison.",
 	},
 	polarflare: {
 		name: "Polar Flare",
@@ -5122,10 +5119,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Rage Fist",
 		desc: "Power is equal to 50+(X*50), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 6 and does not reset upon switching out or fainting. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
 		shortDesc: "+50 power for each time user was hit. Max 6 hits.",
-		champions: {
-			desc: "Power is equal to 50+(X*50), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 6 and resets to 0 when the user leaves the field. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
-			shortDesc: "+50 BP/hit on user. Max 6 hits. Resets on switch-out.",
-		},
 	},
 	ragepowder: {
 		name: "Rage Powder",
@@ -5384,8 +5377,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	rockclimb: {
 		name: "Rock Climb",
-		desc: "Has a 20% chance to confuse the target.",
-		shortDesc: "20% chance to confuse the target.",
+		desc: "Now Rock type. Has 80 base power and 95% accurate. Has a 20% chance to confuse the target.",
+		shortDesc: "Now Rock type. Has 80 base power and 95% accurate. 20% chance to confuse the target.",
 	},
 	rockpolish: {
 		name: "Rock Polish",
@@ -5406,8 +5399,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	rocksmash: {
 		name: "Rock Smash",
-		desc: "Has a 50% chance to lower the target's Defense by 1 stage.",
-		shortDesc: "50% chance to lower the target's Defense by 1.",
+		desc: "Now 60 base power. Has a 50% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "Now 60 base power. 50% chance to lower the target's Defense by 1.",
 	},
 	rockthrow: {
 		name: "Rock Throw",
@@ -5698,8 +5691,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	shadowclaw: {
 		name: "Shadow Claw",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio.",
+		desc: "Now 80 base power. Has a higher chance for a critical hit.",
+		shortDesc: "Now 80 base power. High critical hit ratio.",
 	},
 	shadowforce: {
 		name: "Shadow Force",
@@ -5717,7 +5710,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	shadowpunch: {
 		name: "Shadow Punch",
-		shortDesc: "This move does not check accuracy.",
+		desc: "Now 80 base power.",
+		shortDesc: "Now 80 base power. This move does not check accuracy.",
 	},
 	shadowsneak: {
 		name: "Shadow Sneak",
@@ -5985,7 +5979,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	sludge: {
 		name: "Sludge",
-		desc: "Has a 30% chance to poison the target.",
+		desc: "Now 75 base power. Has a 30% chance to poison the target.",
 		shortDesc: "30% chance to poison the target.",
 		gen1: {
 			desc: "Has a 40% chance to poison the target.",
@@ -6465,7 +6459,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	strength: {
 		name: "Strength",
-		shortDesc: "No additional effect.",
+		desc: "Now 100 base power. Has a 10% chance to raise the user's Attack stat by 1 stage.",
+		shortDesc: "Now 100 base power. Has a 10% chance to raise the user's Attack stat by 1 stage.",
 	},
 	strengthsap: {
 		name: "Strength Sap",
@@ -7520,8 +7515,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	wildcharge: {
 		name: "Wild Charge",
-		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 1/4 recoil.",
+		desc: "Now 100 base power. If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Now 100 base power. Has 1/4 recoil.",
 	},
 	willowisp: {
 		name: "Will-O-Wisp",

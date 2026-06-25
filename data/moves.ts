@@ -2974,7 +2974,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Cotton Spore",
 		pp: 40,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, powder: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		boosts: {
 			spe: -2,
 		},
@@ -7871,11 +7871,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (pokemon.hasAbility('megasol') && !this.field.isWeather('sunnyday')) {
 				delete move.boosts;
 			} else if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
-				move.boosts = { atk: 2, spa: 2 };
+				move.boosts = { spa: 2 };
 			}
 		},
 		boosts: {
-			atk: 1,
 			spa: 1,
 		},
 		target: "self",
@@ -13520,7 +13519,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Poison Powder",
 		pp: 35,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, powder: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		status: 'psn',
 		target: "normal",
 		type: "Poison",
@@ -16857,7 +16856,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sleep Powder",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, powder: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		status: 'slp',
 		target: "normal",
 		type: "Grass",
@@ -17754,7 +17753,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Spore",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, powder: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		status: 'slp',
 		target: "normal",
 		type: "Grass",
@@ -18293,7 +18292,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Stun Spore",
 		pp: 30,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, powder: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		status: 'par',
 		target: "normal",
 		type: "Grass",
@@ -19604,7 +19603,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	thunderwave: {
 		num: 86,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		name: "Thunder Wave",

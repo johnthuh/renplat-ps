@@ -4612,6 +4612,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			mudslap: ["7V", "4T", "3T"],
 			naturalgift: ["4M"],
 			peck: ["8L1", "8V", "7L1", "6L1", "5L1", "4L1", "3L1"],
+			poisonfang: ["9M"],
 			poisonjab: ["8M", "8L64", "8V", "7M", "7L43", "6M", "6L43", "5M", "5L43", "4M", "4L43"],
 			poisonsting: ["8L1", "8V", "7L13", "7V", "6L13", "5L13", "4L13", "3L18"],
 			protect: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
