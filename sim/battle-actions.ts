@@ -1752,7 +1752,7 @@ export class BattleActions {
 		// crit - not a modifier
 		const isCrit = target.getMoveHitData(move).crit;
 		if (isCrit) {
-			baseDamage = tr(baseDamage * (move.critModifier || (this.battle.gen >= 6 ? 1.5 : 2)));
+			baseDamage = tr(baseDamage * (move.critModifier || (2)));
 		}
 
 		// random factor - also not a modifier

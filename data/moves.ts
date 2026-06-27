@@ -3466,12 +3466,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					success = true;
 				}
 			}
-			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', `[of] ${source}`);
-					success = true;
-				}
-			}
 			this.field.clearTerrain();
 			return success;
 		},
@@ -9966,9 +9960,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onBasePower(basePower, source, target, move) {
 			const item = target.getItem();
 			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
-			if (item.id) {
-				return this.chainModify(1.5);
-			}
 		},
 		onAfterHit(target, source) {
 			const item = target.takeItem();

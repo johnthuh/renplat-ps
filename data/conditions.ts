@@ -18,13 +18,25 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 	},
 	par: {
-		inherit: true,
+		name: 'par',
+		effectType: 'Status',
+		onStart(target, source, sourceEffect) {
+			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+				this.add('-status', target, 'par', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
+			} else {
+				this.add('-status', target, 'par');
+			}
+		},
+		onModifySpePriority: -101,
 		onModifySpe(spe, pokemon) {
+			// Paralysis occurs after all other Speed modifiers, so evaluate all modifiers up to this point first
+			spe = this.finalModify(spe);
 			if (!pokemon.hasAbility('quickfeet')) {
-				return this.chainModify(0.25);
+				spe = Math.floor(spe * 25 / 100);
 			}
 			return spe;
 		},
+		onBeforeMovePriority: 1,
 		onBeforeMove(pokemon) {
 			if (!pokemon.hasAbility('magicguard') && this.randomChance(1, 4)) {
 				this.add('cant', pokemon, 'par');
@@ -43,8 +55,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			} else {
 				this.add('-status', target, 'slp');
 			}
-			// 1-3 turns
-			this.effectState.startTime = this.random(2, 5);
+			// 1-4 turns
+			this.effectState.startTime = this.random(2, 6);
 			this.effectState.time = this.effectState.startTime;
 
 			if (target.removeVolatile('nightmare')) {
@@ -172,7 +184,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				return;
 			}
 			this.add('-activate', pokemon, 'confusion');
-			if (!this.randomChance(33, 100)) {
+			if (!this.randomChance(50, 100)) {
 				return;
 			}
 			this.activeTarget = pokemon;
