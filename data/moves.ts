@@ -5018,7 +5018,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Physical",
 		name: "Extreme Speed",
 		pp: 5,
-		priority: 2,
+		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		target: "normal",
 		type: "Normal",
@@ -5086,7 +5086,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Physical",
 		name: "Fake Out",
 		pp: 10,
-		priority: 3,
+		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onTry(source) {
 			if (source.activeMoveActions > 1) {
@@ -11814,7 +11814,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Milk Drink",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		heal: [1, 2],
@@ -14687,7 +14687,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	rapidspin: {
 		num: 229,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 20,
 		category: "Physical",
 		name: "Rapid Spin",
 		pp: 40,
@@ -14724,14 +14724,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					pokemon.removeVolatile('partiallytrapped');
 				}
 			}
-		},
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spe: 1,
-				},
-			},
 		},
 		target: "normal",
 		type: "Normal",
@@ -14802,7 +14794,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Recover",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		heal: [1, 2],
@@ -15424,7 +15416,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Roost",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		heal: [1, 2],
@@ -16803,7 +16795,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Slack Off",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		heal: [1, 2],
@@ -17203,7 +17195,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Soft-Boiled",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		heal: [1, 2],
